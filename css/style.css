@@ -185,10 +185,10 @@ header{
 
 .heading-main-box{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    transform: translate(-45%,-45%);
-    width: 1140px;
+    transform: translate(-35%,-35%);
+    width: 1280px;
 }
 
 /* ------------------------Sticky------------------------------- */
