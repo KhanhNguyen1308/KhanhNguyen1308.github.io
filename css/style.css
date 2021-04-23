@@ -1,0 +1,415 @@
+/* ------------------------------------------------------------- */
+/* -------------------------DEFAULT SETUP----------------------- */
+/* ------------------------------------------------------------- */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #f5f6fa;
+    background-color: #171820;
+    text-rendering: optimizeLegibility;
+    max-width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ------------------------------------------------------------- */
+/* ----------------------REUSABLE COMPONENT--------------------- */
+/* ------------------------------------------------------------- */
+.btn{
+    text-decoration: none;
+    color: #f5f6fa;
+    background-color: #f38406;
+    padding: 15px 30px;
+    border-radius: 100px;
+    margin: 0 5px;
+    width: 210px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s;
+}
+
+.btn,
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #aa3d01;
+    color: #b8bed4;
+    box-shadow: 0 5px 20px rgba(170,61,1, .2);
+    outline: none;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    background-color:  #f38406;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col{
+    display: inline-block;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 300%;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #f5f6fa;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f38406;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2::after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: #f38406;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(17,31,40);
+    color: #f5f6fa;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.p-long{
+    text-align: center;
+    color: #f5f6fa;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+section{
+    padding: 50px;
+}
+/* ------------------------------------------------------------- */
+/* ---------------------------Header---------------------------- */
+/* ------------------------------------------------------------- */
+
+header{
+    background-image: linear-gradient(135deg, rgba(6,6,7, 0.7), rgba(17,31,40,0.8), rgba(72,78,82,0.85)), url(../img/A.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;/* view height */
+    background-attachment: fixed;
+}
+
+.logo{
+    width: 204.4px;
+    float: left;
+    margin-left: 50px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: #f5f6fa;
+    font-size: 110%;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #f5f6fa;
+}
+
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-45%);
+    width: 1140px;
+}
+
+/* ------------------------Sticky------------------------------- */
+.sticky{
+    background-color:rgba(15,17,20, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 85px;
+}
+/* -----------------------mobile-navigation-icon------------ */
+.mobile-nav-icon{
+    color: rgba(245,246,250, 0.9);
+    font-size: 200%;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+
+/* ------------------------------------------------------------- */
+/* ---------------------------ABOUT SECTION---------------------------- */
+/* ------------------------------------------------------------- */
+.about-section{
+    background-color: #bcb6ae;
+    background-image: linear-gradient(135deg, rgba(6,6,7, 0.7), rgba(17,31,40,0.8), rgba(72,78,82,0.85)), url('../img/library.jpg') ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 430px;
+}
+.about-picture{
+    margin-top: 50px;
+    position: relative;
+}
+.about-row{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.about-picture img{
+    width: 90%;
+    border-radius: 20px;
+    border: 4px solid #475568;
+    box-shadow: 4px 4px 20px 1px #484e52;
+    transition: all .7s;
+    /* filter: brightness(60%) blur(2px); */
+}
+
+.picture-title{
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    color:  #f5f6fa;
+    transform: translate(-40%, 100%);
+    opacity: 0; /*Độ mờ*/
+    transition: all .5s;
+}
+
+.about-picture:hover img,
+.about-picture:active img{
+    filter: brightness(60%) blur(2px);
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title{
+    transform: translate(-40%, -50%);
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------------Hobbies Section---------------------------- */
+/* ------------------------------------------------------------- */
+.Tools-section{
+    background-color: #1e1e24;
+    height: 500px;
+}
+
+.Tools-section h2{
+    margin-bottom: 30px;
+}
+
+.Tool-box{
+    background-color: #eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    color:  #2f3640;
+    border-radius: 20px;
+    width: 90%;
+    height: 250px;
+}
+
+.Tool-box ul li{
+    text-align: center;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Tool-box .btn{
+    margin-left: 18%;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------------CONTACT-SECTION---------------------------- */
+/* ------------------------------------------------------------- */
+.contact-section{
+    background-image: linear-gradient(135deg, rgba(6,6,7, 0.7), rgba(17,31,40,0.8), rgba(72,78,82,0.85)), url(../img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 480px;
+}
+
+.information{
+    width: 200%;
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 70px;
+    word-spacing: 1px;
+    font-size: 95%;
+}
+
+.information .fas{
+    color: #487eb0;
+}
+
+.information .fas:hover,
+.information .fas:active{
+    transform: scale(1.3);
+    color: #273c75;
+}
+
+.social-icon{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.social-icon li{
+    display: inline-block;
+    font-size: 250%;
+    margin-left: 30px;
+    color: #f5f6fad8;
+}
+
+.social-icon li i{
+    transition: all .3s;
+}
+
+.social-icon li i:hover,
+.social-icon li i:active{
+    transform: scale(1.3);
+    color: #df861d;
+}
+
+/* ------------------FORM------------------- */
+form{
+    background-color: rgba(17,31,40,0.8);
+    margin-left: 50%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.rowform{
+    width: 630px;
+}
+label{
+    color: #f5f6fad8;
+    padding: 20px;
+}
+
+input, textarea{
+    outline: none;
+    padding: 10px;
+    background-color: rgba(17,31,40,0.3);
+    border: 1px solid  rgba(17,31,40,0.8);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+input{
+    height: 50px;
+    margin-left: 15px;
+}
+
+input[type=text],input[type=email] {
+    width: 240px;
+    font-size: 60%;
+}
+
+textarea{
+    width: 120%;
+}
+
+input[type=text]:focus,input[type=email]:focus, textarea:focus{
+    color:#f5f6fa;
+    background-color: rgba(72,78,82,0.85);
+}
+
+form .rowform:last-child{
+    margin-left: 37px;
+}
+
+input[type=submit]{
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 60%;
+}
+/* ------------------------------------------------------------- */
+/* ---------------------------FOOTER---------------------------- */
+/* ------------------------------------------------------------- */
+footer{
+    text-align: center;
+    background-color:  #111f28;
+    color: #f5f6fa;
+    padding: 20px;
+}
