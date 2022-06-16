@@ -20,62 +20,6 @@ body{
     overflow-x: hidden;
 }
 
-/* ------------------------------------------------------------- */
-/* ----------------------REUSABLE COMPONENT--------------------- */
-/* ------------------------------------------------------------- */
-.btn{
-    text-decoration: none;
-    color: #f5f6fa;
-    background-color: #f38406;
-    padding: 15px 30px;
-    border-radius: 100px;
-    margin: 0 5px;
-    width: 210px;
-    display: inline-block;
-    text-align: center;
-    transition: all .5s;
-}
-
-.btn,
-.btn:link,
-.btn:visited{
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.btn:hover,
-.btn:active{
-    background-color: #aa3d01;
-    color: #b8bed4;
-    box-shadow: 0 5px 20px rgba(170,61,1, .2);
-    outline: none;
-}
-
-/*.btn::after{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 100px;
-    background-color:  #f38406;
-    z-index: -1;
-    transition: all .5s;
-}*/
-
-.btn:hover::after{
-    transform: scaleX(1.2) scaleY(1.4);
-    opacity: 0;
-}
-
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .col{
     display: inline-block;
@@ -156,37 +100,10 @@ header{
     margin-left: 50px;
 }
 
-.main-nav{
-    float: right;
-    list-style: none;
-    margin-right: 50px;
-
-}
-
-.main-nav li{
-    display: inline-block;
-    margin-right: 50px;
-    margin-top: 20px;
-}
-
-.main-nav li a{
-    text-decoration: none;
-    color: #f5f6fa;
-    font-size: 110%;
-    font-weight: 700;
-    transition: .5s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active{
-    border-bottom: 2px solid #f5f6fa;
-}
-
 .heading-main-box{
     position: absolute;
-    top: 25%;
-    left: 40%;
-    transform: translate(-45%,-45%);
+    top: 15%;
+    left: 25%;
     width: 1080px;
 }
 .content-main-box{
