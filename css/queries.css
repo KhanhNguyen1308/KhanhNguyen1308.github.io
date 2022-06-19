@@ -88,6 +88,7 @@
     .col3{width: 30%;}
 }
 
+/*------------------------------Landscape------------------------------*/
  @media only screen and (min-device-width:600px) and (max-device-width:1200px) and (orientation : landscape){
     .heading-main-box{
         top: 5%;
@@ -103,4 +104,16 @@
     .col1{width: 10%;}
     .col2{width: 50%;}
     .col3{width: 35%;}
+}
+
+@media only screen and (min-device-width: 1201px) and (max-device-width: 1500px) and (orientation : landscape){
+    h1{font-size: 150%;}
+    h2{font-size: 150%;}
+    h3{font-size: 100%;}
+    .heading-main-box{top: 10%; left: 10%;}
+    .content-main-box{top: 30%;}
+    .col1{width: 10%;}
+    .col2{width: 55%;}
+    .col3{width: 30%;}
+    .icon{width: 40px; height: 40px;}
 }
