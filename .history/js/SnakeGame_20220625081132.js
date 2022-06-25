@@ -16,21 +16,16 @@ var downDirection = false;
 var inGame = true;
 
 const DOT_SIZE = 10;
-const ALL_DOTS = 1200;
+const ALL_DOTS = 900;
 const MAX_RAND = 29;
 const DELAY = 140;
-const C_HEIGHT = 400;
-const C_WIDTH = 400;
+const C_HEIGHT = 300;
+const C_WIDTH = 300;
 
 const LEFT_KEY = 37;
 const RIGHT_KEY = 39;
 const UP_KEY = 38;
 const DOWN_KEY = 40;
-
-const A_KEY = 65;
-const S_KEY = 83;
-const D_KEY = 68;
-const W_KEY = 87;
 
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);
@@ -38,7 +33,6 @@ var y = new Array(ALL_DOTS);
 function init() {
 
     canvas = document.getElementById('mySnakeGame');
-    console.log('loading canvas');
     ctx = canvas.getContext('2d');
 
     loadImages();
@@ -54,13 +48,13 @@ function startGame(){
 function loadImages() {
 
     head = new Image();
-    head.src = '../js/SnakeGame/Head.png';
+    head.src = 'SnakeGame/Head.png';
 
     ball = new Image();
-    ball.src = '../js/SnakeGame/dot.png';
+    ball.src = 'SnakeGame/dot.png';
 
     apple = new Image();
-    apple.src = '../js/SnakeGame/apple.png';
+    apple.src = 'SnakeGame/apple.png';
 }
 
 function createSnake() {
@@ -207,28 +201,28 @@ onkeydown = function(e) {
 
     var key = e.keyCode;
 
-    if ((key == A_KEY) && (!rightDirection)) {
+    if ((key == LEFT_KEY) && (!rightDirection)) {
 
         leftDirection = true;
         upDirection = false;
         downDirection = false;
     }
 
-    if ((key == D_KEY) && (!leftDirection)) {
+    if ((key == RIGHT_KEY) && (!leftDirection)) {
 
         rightDirection = true;
         upDirection = false;
         downDirection = false;
     }
 
-    if ((key == W_KEY) && (!downDirection)) {
+    if ((key == UP_KEY) && (!downDirection)) {
 
         upDirection = true;
         rightDirection = false;
         leftDirection = false;
     }
 
-    if ((key == S_KEY) && (!upDirection)) {
+    if ((key == DOWN_KEY) && (!upDirection)) {
 
         downDirection = true;
         rightDirection = false;

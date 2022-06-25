@@ -16,11 +16,11 @@ var downDirection = false;
 var inGame = true;
 
 const DOT_SIZE = 10;
-const ALL_DOTS = 1200;
+const ALL_DOTS = 900;
 const MAX_RAND = 29;
 const DELAY = 140;
-const C_HEIGHT = 400;
-const C_WIDTH = 400;
+const C_HEIGHT = 300;
+const C_WIDTH = 300;
 
 const LEFT_KEY = 37;
 const RIGHT_KEY = 39;
@@ -205,6 +205,7 @@ function gameCycle() {
 
 onkeydown = function(e) {
 
+    console.log(e.keyCode);
     var key = e.keyCode;
 
     if ((key == A_KEY) && (!rightDirection)) {

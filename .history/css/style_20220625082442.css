@@ -289,10 +289,6 @@ NDK_img{
     background-attachment: fixed;
     height: 800px;
 }
-.Game-Section canvas{
-    background-color: #171820;
-    border: 2px solid #a02d76;
-}
 
 .Game-Section button {
     width: 200px;
