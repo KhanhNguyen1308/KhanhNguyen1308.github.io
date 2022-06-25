@@ -23,7 +23,7 @@ function RGBtoHEX() {
     }
     else{
         var value = "Value must be an interger number in range 0 to 255"
-        document.getElementById("rgbToHexMess").innerHTML = value;
+        document.getElementById("rgbToHexMess").setAttribute('value',value);
     }
     
 }

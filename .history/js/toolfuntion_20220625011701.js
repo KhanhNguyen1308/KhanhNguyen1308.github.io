@@ -17,15 +17,9 @@ function RGBtoHEX() {
     var rValue = parseInt(document.getElementById("rValue").value);
     var gValue = parseInt(document.getElementById("gValue").value);
     var bValue = parseInt(document.getElementById("bValue").value);
-    if(Number.isInteger(rValue) && Number.isInteger(bValue) && Number.isInteger(gValue)){
-        var value = componentToHex(rValue) + componentToHex(gValue) + componentToHex(bValue);
-        document.getElementById("resultHexCode").setAttribute('value',value);
-    }
-    else{
-        var value = "Value must be an interger number in range 0 to 255"
-        document.getElementById("rgbToHexMess").innerHTML = value;
-    }
     
+    var value = componentToHex(rValue) + componentToHex(gValue) + componentToHex(bValue);
+    document.getElementById("resultHexCode").setAttribute('value',value);
 }
 function componentToHex(c) {
     var hex = c.toString(16);

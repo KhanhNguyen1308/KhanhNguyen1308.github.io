@@ -17,15 +17,9 @@ function RGBtoHEX() {
     var rValue = parseInt(document.getElementById("rValue").value);
     var gValue = parseInt(document.getElementById("gValue").value);
     var bValue = parseInt(document.getElementById("bValue").value);
-    if(Number.isInteger(rValue) && Number.isInteger(bValue) && Number.isInteger(gValue)){
-        var value = componentToHex(rValue) + componentToHex(gValue) + componentToHex(bValue);
-        document.getElementById("resultHexCode").setAttribute('value',value);
-    }
-    else{
-        var value = "Value must be an interger number in range 0 to 255"
-        document.getElementById("rgbToHexMess").innerHTML = value;
-    }
     
+    var value = componentToHex(rValue) + componentToHex(gValue) + componentToHex(bValue);
+    document.getElementById("resultHexCode").setAttribute('value',value);
 }
 function componentToHex(c) {
     var hex = c.toString(16);
@@ -38,12 +32,5 @@ function HEXtoRGB(){
 
 function ageCal(){
     var ages = parseInt(document.getElementById("Age").value);
-    var result;
-    if(Number.isInteger(ages)){
-        result = "Your age is " + ages.toString();
-    }
-    else{
-        result = "Plese enter an positive integer number"
-    }
-    document.getElementById("age_calculate").innerHTML = result;
+    document.getElementById("age_calculate").innerHTML = 
 }

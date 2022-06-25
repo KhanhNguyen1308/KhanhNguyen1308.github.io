@@ -99,9 +99,6 @@
                 <div class="col2"><button type="button" onclick="RGBtoHEX()">Convert</button></div>
                 <div class="col2"><input type="textbox" id="resultHexCode"></div>
             </div>
-            <div class="row">
-                <div class="col3"><p id="rgbToHexMess"></p></div>
-            </div>
             <div class="row"></div><div class="row"></div><div class="row"></div>
             
             
@@ -115,30 +112,15 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col2"><button type="button" onclick="RGBtoHEX()">Convert</button></div>
+                <div class="col2"><input type="textbox" id="resultR"></div>
+                <div class="col2"><input type="textbox" id="resultG"></div>
+                <div class="col2"><input type="textbox" id="resultB"></div>
+            </div>
+            <div class="row">
                 <div class="col1">#</div>
                 <div class="col2">
                     <input type="Text" maxlength="6">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col2"><button type="button" onclick="RGBtoHEX()">Convert</button></div>
-                <div class="col2">
-                    <div class="row" id>
-                            <div class="icon" id="Red"></div>
-                            <input type="textbox" id="resultR">
-                    </div>
-                </div>
-                <div class="col2">
-                    <div class="row" id>
-                            <div class="icon" id="Green"></div>
-                            <input type="textbox" id="resultG">
-                    </div>
-                </div>
-                <div class="col2">
-                    <div class="row" id>
-                            <div class="icon" id="Blue"></div>
-                            <input type="textbox" id="resultB">
-                    </div>
                 </div>
             </div>
             <div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div>
@@ -157,14 +139,9 @@
             <div class="row">
                 <div class="col1">age</div>
                 <div class="col2">
-                    <input type="number" onchange="this.value = Math.max(0, Math.min(999, parseInt(this.value)));" maxlength="3" id="Age">
+                    <input type="number" onchange="this.value = Math.max(0, Math.min(999, parseInt(this.value)));" maxlength="3">
                 </div>
             </div>
-            <div class="row">
-                <div class="col2"><button type="button" onclick="ageCal()">Calculate</button></div>
-            </div>
-            <div class="row">
-                <p id="age_calculate"></p>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>
