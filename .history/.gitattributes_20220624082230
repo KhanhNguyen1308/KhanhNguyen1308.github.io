@@ -1,0 +1,4 @@
+*.html filter=git-crypt diff=git-crypt
+css/*.css filter=git-crypt diff=git-crypt
+abackup/* filter=git-crypt diff=git-crypt
+img/* filter=git-crypt diff=git-crypt

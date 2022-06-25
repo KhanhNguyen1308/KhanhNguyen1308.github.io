@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Texturina:opsz,wght@12..72,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/grid/grid.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Khanh Nguyen Duy</title>
+</head>
+
+<body>
+    
+    <header id="home">
+        <div class="heading-main-box">
+            <h1>Hola! I'm Khanh Nguyen Duy</h1>
+            <h2>this is my testing web</h2>
+            <div class="row">
+                <div class="icons">
+                    <a href="https://www.instagram.com/ndkhanh.1308/" class="icon icon--instagram">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.facebook.com/khanh.nguyenduy.1485/" class="icon icon--facebook">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                    <a href="https://github.com/KhanhNguyen1308" class="icon icon--github">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-main-box">
+            <div class="col1">
+            </div>
+            <div class="col2">
+                <h3>Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.
+                    Almost before we knew it, we had left the ground.</h3>
+            </div>
+            <div class="col3">
+                <img src="./img/NDK-export.gif" alt="" >
+            </div>
+            <div class="col4"></div>
+        </div>
+    </header>
+    
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------Tools Section--------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <section>
+        <h2>My Tools</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openTool(event, 'RGB to Hex')">RGB to Hex</button>
+            <button class="tablinks" onclick="openTool(event, 'Hex to RGB')">Hex to RGB</button>
+            <button class="tablinks" onclick="openTool(event, 'Smart age calculator')">Smart age calculator</button>
+        </div>
+        <!--Tab content-->
+        <div id="RGB to Hex" class="tabcontent">
+
+            <div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div>
+            
+            <div class="row">
+                <div class="col2">
+                    <p>R    </p>
+                    <input type="number" onchange="this.value = Math.max(0, Math.min(255, parseInt(this.value)));" id="rValue">
+                </div>
+                <div class="col2">
+                    <p>G    </p>
+                    <input type="number" onchange="this.value = Math.max(0, Math.min(255, parseInt(this.value)));" id="gValue">
+                </div>
+                <div class="col2">
+                    <p>B    </p>
+                    <input type="number" onchange="this.value = Math.max(0, Math.min(255, parseInt(this.value)));" id="bValue">
+                </div>
+            </div>
+            
+            <div class="row"></div>
+            <div class="row">
+                <div class="col2"><button type="button" onclick="RGBtoHEX()">Convert</button></div>
+                <div class="col2"><input type="textbox" id="resultHexCode"></div>
+            </div>
+            <div class="row"></div><div class="row"></div><div class="row"></div>
+            
+            
+        </div>
+        <div id="Hex to RGB" class="tabcontent">
+
+            <div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div>
+            <div class="row">
+                <div class="col2">
+                    Enter Hex Value
+                </div>
+            </div>
+            <div class="row">
+                <div class="col2"><button type="button" onclick="RGBtoHEX()">Convert</button></div>
+                <div class="col2"><input type="textbox" id="resultR"></div>
+            </div>
+            <div class="row">
+                <div class="col1">#</div>
+                <div class="col2">
+                    <input type="Text" maxlength="6">
+                </div>
+            </div>
+            <div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div>
+        </div>
+        <div id="Smart age calculator" class="tabcontent">
+
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col2">
+                    Enter your Age
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">age</div>
+                <div class="col2">
+                    <input type="number" onchange="this.value = Math.max(0, Math.min(999, parseInt(this.value)));" maxlength="3">
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+    <!-- --------------------------------------Libarary-Section--------------------------------------------------------- -->
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+    
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <!-- --------------------------------------Contact Section--------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/toolfuntion.js"></script>
+</body>
+</html>

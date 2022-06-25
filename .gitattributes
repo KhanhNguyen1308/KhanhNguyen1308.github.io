@@ -1,2 +1,1 @@
-*.html filter=git-crypt diff=git-crypt
-css/*.css filter=git-crypt diff=git-crypt
+a
