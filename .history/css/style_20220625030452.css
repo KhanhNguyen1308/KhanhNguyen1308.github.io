@@ -166,7 +166,7 @@ NDK_img{
     outline-color: #a02d76;;
 }
 .icon--facebook:hover{
-    background-image: radial-gradient(#285AEB 0%, #285AEB 90%);
+    background-image: radial-gradient(circle at 30% 107%, #285AEB 0%, #285AEB 90%);
     outline-color: #1da1f2;
 }
 .icon--github:hover{

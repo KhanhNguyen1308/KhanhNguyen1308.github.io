@@ -166,12 +166,12 @@ NDK_img{
     outline-color: #a02d76;;
 }
 .icon--facebook:hover{
-    background-image: radial-gradient(#285AEB 0%, #285AEB 90%);
+    background-color: #1da1f2;
+    background-image: radial-gradient(circle at 30% 107%, #1da1f2 90%);
     outline-color: #1da1f2;
 }
 .icon--github:hover{
     background-color: #2ea44f;
-    background-image: radial-gradient(#2ea44f 0%, #2ea44f 90%);
     outline-color: #2ea44f;
 }
 @keyframes shake{
