@@ -147,7 +147,7 @@ NDK_img{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 26px;background-image: linear-gradient(135deg, rgba(6,6,7, 0.7), rgba(17,31,40,0.8), rgba(72,78,82,0.85)), url(../img/Setup.gif);
     color: #fff;
     border-radius: 50%;
     outline: 2px solid #fff;
@@ -278,5 +278,11 @@ NDK_img{
     height: 40px;
     font-size: 100%;
   }
-
+.Tool-Section{
+    background-image: url(../img/NDK_2.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 450px;
+}
 

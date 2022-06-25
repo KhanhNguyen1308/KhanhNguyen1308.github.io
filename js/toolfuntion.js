@@ -33,7 +33,23 @@ function componentToHex(c) {
 }
 
 function HEXtoRGB(){
-
+    const hexCode = document.getElementById("HEXCODE").value;
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexCode);
+    const check = hexCode.split('')[0];
+    console.log(check);
+    if(check != "#"){
+        document.getElementById("HexToRGBMess").innerHTML = "Hex code must start with #"
+    }
+    else{
+        if(hexCode.length < 7){
+            document.getElementById("HexToRGBMess").innerHTML = "Wrong code"
+        }
+        else{
+            document.getElementById("resultR").value = parseInt(result[1], 16);
+            document.getElementById("resultG").value = parseInt(result[2], 16);
+            document.getElementById("resultB").value = parseInt(result[3], 16);
+        }
+    }
 }
 
 function ageCal(){

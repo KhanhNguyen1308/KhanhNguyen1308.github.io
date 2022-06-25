@@ -67,7 +67,7 @@
     <!-- -------------------------------------------------------------------------------------------------------------- -->
     <!-- ----------------------------------------Tools Section--------------------------------------------------------- -->
     <!-- -------------------------------------------------------------------------------------------------------------- -->
-    <section>
+    <section class="Tool-Section">
         <h2>My Tools</h2>
         <div class="tab">
             <button class="tablinks" onclick="openTool(event, 'RGB to Hex')">RGB to Hex</button>
@@ -97,7 +97,7 @@
             <div class="row"></div>
             <div class="row">
                 <div class="col2"><button type="button" onclick="RGBtoHEX()">Convert</button></div>
-                <div class="col2"><input type="textbox" id="resultHexCode"></div>
+                <div class="col2"># <input type="textbox" id="resultHexCode"></div>
             </div>
             <div class="row">
                 <div class="col3"><p id="rgbToHexMess"></p></div>
@@ -115,32 +115,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col1">#</div>
+                <div class="col1">Code</div>
                 <div class="col2">
-                    <input type="Text" maxlength="6">
+                    <input type="Text" maxlength="7" id="HEXCODE">
                 </div>
             </div>
             <div class="row">
-                <div class="col2"><button type="button" onclick="RGBtoHEX()">Convert</button></div>
+                <div class="col2"><button type="button" onclick="HEXtoRGB()">Convert</button></div>
                 <div class="col2">
-                    <div class="row" id>
+                    <div class="row">
                             <div class="icon" id="Red"></div>
                             <input type="textbox" id="resultR">
                     </div>
                 </div>
                 <div class="col2">
-                    <div class="row" id>
+                    <div class="row">
                             <div class="icon" id="Green"></div>
                             <input type="textbox" id="resultG">
                     </div>
                 </div>
                 <div class="col2">
-                    <div class="row" id>
-                            <div class="icon" id="Blue"></div>
-                            <input type="textbox" id="resultB">
+                    <div class="row">
+                            <div class="icon" id="Blue">
+
+                            </div><input type="textbox" id="resultB">
                     </div>
                 </div>
             </div>
+            <div class="row"><div class="col2"><p id="HexToRGBMess"></p></div></div>
             <div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div>
         </div>
         <div id="Smart age calculator" class="tabcontent">
