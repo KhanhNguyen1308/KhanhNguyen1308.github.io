@@ -284,10 +284,6 @@ NDK_img{
 /*------------------------------------------------------------------------------------------------------------------------*/
 .Game-Section{
     background-image: url(../img/NDK_2.gif);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 800px;
 }
 
 
