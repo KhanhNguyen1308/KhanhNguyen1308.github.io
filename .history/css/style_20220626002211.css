@@ -89,6 +89,7 @@ header{
 }
 
 .main-nav{
+    background-color: #171820;
     float: right;
     list-style: none;
     margin-right: 50px;

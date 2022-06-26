@@ -87,7 +87,9 @@ header{
     height: 100vh;/* view height */
     background-attachment: fixed;
 }
-
+nav{
+    background-color: #171820;
+}
 .main-nav{
     float: right;
     list-style: none;
